@@ -24,8 +24,8 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="registro.html"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
-                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a></li>
+                    <li><a href="#" id="nombreUsuarioLogueado"></a></li>
+                    <li><a href="index.html" onclick="logOut()"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a></li>
                     
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -39,9 +39,9 @@
     <br>
     <div class = "container">
         <div class = "row">
-            <div class="well well-sm">
                 <div class = "col-md-2"></div>
                 <div class = "col-md-8">
+                <div class="well well-sm">   
                     <p>
                         Acaba de realizar una peticion con concepto <span id="mostrar_titulo"></span> le sera enviada <span id="mostrar_urgencia"></span> y en formato <span id="mostrar_formato"></span>
                         <br>
@@ -53,8 +53,8 @@
 
                     </p>
                 </div>
+                </div> 
                 <div class = "col-md-2"></div>
-            </div>
         </div>
     </div>
     <script>
