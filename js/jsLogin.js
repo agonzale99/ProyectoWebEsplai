@@ -17,7 +17,7 @@ function validarEmail() {
     var almacenar = document.getElementById("checkCookies");
 
     //COMPROBAMOS QUE TANTO EL USUARIO COMO EL PASSWORD NO ESTEN EN BLANCO
-    if (usuario == "" || password == "") {
+    if (usuario == "Correo" || password == "Contraseña") {
         document.getElementById("errorEmail").innerHTML = "Debe completar ambos campos.";
         document.getElementById("email1").focus();
     }
