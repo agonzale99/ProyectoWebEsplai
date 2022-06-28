@@ -33,7 +33,7 @@ function peticion(){
     formato = document.getElementById('Formato_peticion').value;
     urgencia = document.getElementById('Urgencia_peticion').value;
     //comprobacion de que todos los campos estan rellenos
-    if ((titulo == '') || (descripcion == '') || (formato == 'Elije...') || (urgencia == 'Elije...') )
+    if ((titulo == '') || (descripcion == '') || (formato == 'Formato') || (urgencia == 'Urgencia') )
         alert('Porfavor rellene todos los campos');
     
     else{//Si todo correcto nos redirige a la pagina siguiente
@@ -53,8 +53,8 @@ function peticion_en(){
     formato = document.getElementById('Formato_peticion').value;
     urgencia = document.getElementById('Urgencia_peticion').value;
     //comprobacion de que todos los campos estan rellenos
-    if ((titulo == '') || (descripcion == '') || (formato == 'Elije...') || (urgencia == 'Elije...') )
-        alert('Porfavor rellene todos los campos');
+    if ((titulo == '') || (descripcion == '') || (formato == 'Format') || (urgencia == 'Urgency') )
+        alert('Please, fill all fields');
     
     else{//Si todo correcto nos redirige a la pagina siguiente
         window.location="Resumen_peticion_EN.html";

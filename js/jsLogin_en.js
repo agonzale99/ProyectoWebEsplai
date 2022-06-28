@@ -18,7 +18,8 @@ function validarEmail() {
 
     //COMPROBAMOS QUE TANTO EL USUARIO COMO EL PASSWORD NO ESTEN EN BLANCO
     if (usuario == "" || password == "") {
-        document.getElementById("errorEmail").innerHTML = "Complete this fields";
+        //document.getElementById("errorEmail").innerHTML = "Complete this fields";
+        alert("Complete this fields")
         document.getElementById("email1").focus();
     }
     //COMPROBAMOS QUE EL FORMATO DEL EMAIL SEA CORRECTO
