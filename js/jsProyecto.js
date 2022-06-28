@@ -45,6 +45,26 @@ function peticion(){
         
     }
 }
+
+function peticion_en(){ 
+
+    titulo = document.getElementById('Titulo_peticion').value; 
+    descripcion = document.getElementById('Descripcion_peticion').value;
+    formato = document.getElementById('Formato_peticion').value;
+    urgencia = document.getElementById('Urgencia_peticion').value;
+    //comprobacion de que todos los campos estan rellenos
+    if ((titulo == '') || (descripcion == '') || (formato == 'Elije...') || (urgencia == 'Elije...') )
+        alert('Porfavor rellene todos los campos');
+    
+    else{//Si todo correcto nos redirige a la pagina siguiente
+        window.location="Resumen_peticion_EN.html";
+        localStorage.ttitulo = titulo;
+        localStorage.ddescripcion = descripcion;
+        localStorage.fformato = formato;
+        localStorage.uurgencia = urgencia;
+        
+    }
+}
         
 
 //Funcion para mostrar un breve resument de la petición que se ha hecho
